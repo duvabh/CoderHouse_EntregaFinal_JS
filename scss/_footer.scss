@@ -1,0 +1,31 @@
+.footer {
+  grid-area: footer;
+  background-image: $bg_degrade;
+  display: flex;
+  justify-content: space-around;
+  h3{
+    color: $Lavender;
+    font-family: $contrail;
+    margin: 0 10px 0;
+    text-align: center;}
+  img {
+      width: 30px;
+      margin: 5px 10px 0;
+    }
+  p {
+    font-family: $roboto;
+    font-size: 18px;
+    color: $LightSteelBlue;
+    margin-right: 10px;
+  }
+  .redes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+  }
+  .datos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

@@ -1,0 +1,10 @@
+.title_header {
+    grid-area: header;
+    background-image: $bg_degrade;
+    font-family: $contrail;
+    letter-spacing: 30px;
+    font-size: 65px;
+    text-align: center;
+    -webkit-text-stroke: 3px $pink;
+    -webkit-text-fill-color: $border_pink;
+}
