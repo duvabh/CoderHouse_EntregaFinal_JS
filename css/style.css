@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&family=Work+Sans:wght@100;200;400;600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,15 +31,16 @@
   font-weight: bold; }
   .nav ul {
     font-family: "Contrail One", cursive;
-    list-style: none; }
+    list-style: none;
+    margin-right: 20px; }
     .nav ul li {
       position: relative;
       margin: 2em 0; }
       .nav ul li a {
         text-decoration: none;
-        line-height: 4em;
+        line-height: 5em;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 7px;
         color: rgba(255, 255, 255, 0.35);
         display: block;
         transition: all ease-out 600ms; }
@@ -64,13 +65,43 @@
     margin-bottom: 40px;
     width: 180px; }
 
-main {
+.main-categorys {
+  background-color: #E6E6FA;
+  grid-area: main; }
+  .main-categorys .mans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 15px; }
+
+.products-card {
+  width: 240px;
   background-color: #B0C4DE;
-  grid-area: main;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: ""; }
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 15px; }
+  .products-card img {
+    width: 240px;
+    height: 250px;
+    object-fit: cover; }
+  .products-card .product_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Work Sans", sans-serif; }
+    .products-card .product_info ul {
+      list-style: none; }
+      .products-card .product_info ul li {
+        margin: 12px 0; }
+        .products-card .product_info ul li strong {
+          text-transform: uppercase;
+          display: inline-block;
+          color: #191970;
+          width: 80px; }
+    .products-card .product_info figure {
+      margin: 0; }
+      .products-card .product_info figure img {
+        width: 50px;
+        height: 50px; }
 
 .footer {
   grid-area: footer;

@@ -1,7 +1,9 @@
-main {
-    background-color: $LightSteelBlue;
+.main-categorys {
+    background-color: $Lavender;
     grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: ""; }
+    .mans-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, $size-card);
+        gap: 15px;
+    }
+}
