@@ -3,7 +3,8 @@
     grid-area: main;
     .mans-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, $size-card);
-        gap: 15px;
+        grid-template-columns: repeat(auto-fill, $size-width-card);
+        gap: 8px;
+        place-content: center;
     }
 }

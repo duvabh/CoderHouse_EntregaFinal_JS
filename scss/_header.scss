@@ -1,10 +1,21 @@
 .title_header {
-    grid-area: header;
-    background-image: $bg_degrade;
-    font-family: $contrail;
+  display: flex;
+  grid-area: header;
+  background-image: $bg_degrade;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row;
+  .title_dp {
+    font-size: 50px;
     letter-spacing: 30px;
-    font-size: 65px;
-    text-align: center;
+    font-family: $contrail;
     -webkit-text-stroke: 3px $pink;
     -webkit-text-fill-color: $border_pink;
+  }
+  .car_empy {
+    img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+  }
 }
