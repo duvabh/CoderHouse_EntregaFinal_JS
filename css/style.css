@@ -25,9 +25,38 @@
     font-family: "Contrail One", cursive;
     -webkit-text-stroke: 3px #ff73b8;
     -webkit-text-fill-color: #c7188c; }
-  .title_header .car_empy img {
-    width: 50px;
-    margin-bottom: 10px; }
+  .title_header .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .title_header .profile p {
+      font-family: "Work Sans", sans-serif;
+      color: #191970;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px; }
+    .title_header .profile img {
+      width: 50px; }
+  .title_header .car_empy {
+    position: relative; }
+    .title_header .car_empy div {
+      position: absolute;
+      top: 0;
+      right: -6px;
+      width: 20px;
+      height: 20px;
+      font-family: "Work Sans", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      color: #c7188c;
+      background-color: #B0C4DE;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center; }
+    .title_header .car_empy img {
+      width: 50px;
+      margin-bottom: 10px; }
 
 .nav {
   grid-area: nav;
@@ -158,7 +187,7 @@
 .products-card {
   width: 230px;
   background-color: #B0C4DE;
-  margin-left: 10px;
+  margin-left: 10px 0;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 15px; }
