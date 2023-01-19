@@ -1,12 +1,13 @@
 .product-detail {
-  font-family: $work;
-  background-color: $Lavender;
+  font-family: "Work Sans", sans-serif;
+  background-color: #e6e6fa;
   width: 360px;
-  padding: 24px;
+  padding: 0 24px 0 24px;
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  margin-top: 100px;
+  margin-top: 88px;
+  border: 1px solid black;
   .primary-button {
     background-image: $bg_degrade;
     border-radius: 8px;
