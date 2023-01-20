@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&family=Work+Sans:wght@100;200;400;600;800&display=swap');
+
 //Variables de diseño
 
+//Fonts
 $contrail: 'Contrail One', cursive;
 $roboto: 'Roboto Condensed', sans-serif;
-$bg_degrade: linear-gradient(to right,#191970, #5e42a6);
+$work: 'Work Sans', sans-serif;
+
+//colors
+$bg_degrade: linear-gradient(to right, #191970, #5e42a6);
 $MidnightBlue: #191970;
 $pink: #ff73b8;
 $border_pink: #c7188c;
 $border_blue: #89dbe8;
-$LightSteelBlue: #B0C4DE;
-$Lavender: #E6E6FA;
+$LightSteelBlue: #b0c4de;
+$Lavender: #e6e6fa;
 $black: #000000;
 $white: #ffffff;
+
+//Size
+$size-width-card: 235px;
+$size-height-card: 230px;
+$small: 14px;
+$medium: 16px;
+$large: 18px;

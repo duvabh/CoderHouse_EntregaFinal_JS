@@ -8,14 +8,15 @@
     ul {
         font-family: $contrail;
         list-style: none;
+        margin-right: 20px;
         li {
             position: relative;
             margin: 2em 0;
             a {
                 text-decoration: none;
-                line-height: 4em;
+                line-height: 5em;
                 text-transform: uppercase;
-                letter-spacing: 5px;
+                letter-spacing: 7px;
                 color: rgba(255, 255, 255, 0.35);
                 display: block;
                 transition: all ease-out 600ms;

@@ -1,0 +1,38 @@
+.profile-menu {
+  position: absolute;
+  top: 87px;
+  right: 16%;
+  width: 180px;
+  height: auto;
+  border: 1px solid $Lavender;
+  font-weight: 400;
+  border-radius: 2px;
+  padding-top: 20px 20px 0 20px;
+  background-color: $LightSteelBlue;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      text-align: end;
+      margin-right: 5px;
+      a {
+        color: $black;
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: inline-block;
+        font-family: $work;
+        font-size: $large;
+      }
+    }
+    li:last-child {
+      border-top: 2px solid $border_pink;
+      a {
+        color: $border_pink;
+        font-family: $work;
+        font-weight: bold;
+        font-size: $large;
+      }
+    }
+  }
+}

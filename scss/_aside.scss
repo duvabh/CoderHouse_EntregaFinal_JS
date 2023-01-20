@@ -1,0 +1,88 @@
+.product-detail {
+  font-family: "Work Sans", sans-serif;
+  background-color: #e6e6fa;
+  width: 360px;
+  padding: 0 24px 0 24px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  margin-top: 88px;
+  border: 1px solid black;
+  .primary-button {
+    background-image: $bg_degrade;
+    border-radius: 8px;
+    border: none;
+    color: $pink;
+    width: 100%;
+    cursor: pointer;
+    font-size: $medium;
+    font-weight: bold;
+    height: 50px;
+    text-transform: uppercase;
+  }
+}
+
+.title-container {
+  display: flex;
+  margin-bottom: 5px;
+  img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+    margin-left: 10px;
+  }
+  .title {
+    font-size: $small;
+    font-weight: bold;
+  }
+}
+
+.order {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: center;
+  background-color: var(--text-input-field);
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+  p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+  }
+  p span:nth-child(1) {
+    font-size: $medium;
+    font-weight: bold;
+    color: $MidnightBlue;
+  }
+  p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+  }
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 14px;
+  margin-bottom: 15px;
+  padding: 2px;
+  align-items: center;
+  border: solid 2px $LightSteelBlue;
+  background-color: $LightSteelBlue;
+  figure {
+    margin: 0;
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+  p:nth-child(2) {
+    color: $MidnightBlue;
+  }
+  p:nth-child(3) {
+    font-size: $medium;
+    font-weight: bold;
+  }
+}

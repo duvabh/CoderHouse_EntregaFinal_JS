@@ -1,0 +1,92 @@
+[
+  {
+    "price": 1,
+    "id": 1,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 1,
+    "id": 2,
+    "name": "Spiderman",
+    "brand": "MARVEL"
+  },
+  {
+    "price": 1,
+    "id": 3,
+    "name": "Venom",
+    "brand": "MARVEL"
+  },
+  {
+    "price": 1,
+    "id": 4,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 1,
+    "id": 5,
+    "name": "Venom",
+    "brand": "MARVEL"
+  },
+  {
+    "price": 1,
+    "id": 6,
+    "name": "IRONAM",
+    "brand": "MARVEL"
+  },
+  {
+    "price": 1,
+    "id": 7,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 1,
+    "id": 8,
+    "name": "Venom",
+    "brand": "MARVEL"
+  },
+  {
+    "price": 1,
+    "id": 9,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 1,
+    "id": 10,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 2,
+    "id": 11,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 2,
+    "id": 12,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 2,
+    "id": 13,
+    "name": "IRONAM",
+    "brand": "MARVEL"
+  },
+  {
+    "price": 2,
+    "id": 14,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  },
+  {
+    "price": 2,
+    "id": 15,
+    "name": "Camisa batman",
+    "brand": "DC comic"
+  }
+]
