@@ -1,10 +1,10 @@
 .main-categorys {
-    background-color: $Lavender;
-    grid-area: main;
-    .mans-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, $size-width-card);
-        gap: 8px;
-        place-content: center;
-    }
+  background-color: $white;
+  grid-area: main;
+  .mans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, $size-width-card);
+    gap: 8px;
+    place-content: center;
+  }
 }
