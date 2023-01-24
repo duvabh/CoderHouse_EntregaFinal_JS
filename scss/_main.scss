@@ -1,10 +1,17 @@
 .main-categorys {
-  background-color: $white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(30, 35, 38, 0.425),
+    rgba(30, 35, 38, 0.425)
+  );
   grid-area: main;
   .mans-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, $size-width-card);
     gap: 8px;
     place-content: center;
+    .card-container {
+      width: $size-width-card;
+    }
   }
 }

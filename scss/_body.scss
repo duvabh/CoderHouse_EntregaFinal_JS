@@ -11,9 +11,9 @@
   grid-template-columns: auto 2fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "nav header"
+    "header header"
     "nav main"
-    "nav footer";
+    "footer footer";
 }
 
 .inactive {

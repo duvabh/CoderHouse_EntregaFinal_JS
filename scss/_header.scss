@@ -1,16 +1,21 @@
 .title_header {
   display: flex;
   grid-area: header;
-  background-image: $bg_degrade;
+  background-color: $bg_color;
   justify-content: space-around;
   align-items: flex-end;
   flex-direction: row;
+  .logo {
+    img {
+      width: 110px;
+    }
+  }
   .title_dp {
     font-size: 35px;
     letter-spacing: 30px;
     font-family: $contrail;
     text-transform: uppercase;
-    -webkit-text-stroke: 2px $pink;
+    -webkit-text-stroke: 1px $Lavender;
     -webkit-text-fill-color: $border_pink;
   }
   .profile {
@@ -19,9 +24,9 @@
     align-items: center;
     p {
       font-family: $work;
-      color: $MidnightBlue;
       font-weight: bold;
       font-size: $large;
+      color: $Lavender;
       margin-bottom: 10px;
     }
     img {

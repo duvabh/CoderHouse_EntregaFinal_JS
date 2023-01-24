@@ -1,52 +1,52 @@
 .nav {
-    grid-area: nav;
-    background-color: $MidnightBlue;
-    position: relative;
-    padding: 10px;
-    text-align: right; 
-    font-weight: bold;
-    ul {
-        font-family: $contrail;
-        list-style: none;
-        margin-right: 20px;
-        li {
-            position: relative;
-            margin: 2em 0;
-            a {
-                text-decoration: none;
-                line-height: 5em;
-                text-transform: uppercase;
-                letter-spacing: 7px;
-                color: rgba(255, 255, 255, 0.35);
-                display: block;
-                transition: all ease-out 600ms;
-            }
-        }
-        .active a {
-            color: white;
-        }
-        :not(.active)::after {
-            opacity: 0.2;
-        }
-        :not(.active):hover a {
-            color: rgba(255, 255, 255, 0.911); 
-        }
-        .nav ul li:not(.active):hover a {
-            color: rgba(255, 255, 255, 0.75); 
-        }
-        ::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 0.2em;
-            background: $black;
-            left: 0;
-            bottom: 0;
-            background-image: $bg_degrade;
-        }
+  grid-area: nav;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(30, 35, 38, 0.425),
+    rgba(30, 35, 38, 0.425)
+  );
+  position: relative;
+  padding: 10px;
+  text-align: right;
+  font-weight: bold;
+  ul {
+    font-family: $contrail;
+    list-style: none;
+    margin-right: 20px;
+    li {
+      position: relative;
+      margin: 2em 0;
+      a {
+        text-decoration: none;
+        line-height: 5em;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        color: #252a2e;
+        display: block;
+        transition: all ease-out 600ms;
+      }
     }
-    img {
-        margin-bottom: 40px;
-        width: 180px;
+    .active a {
+      color: #252a2e;
     }
+    :not(.active)::after {
+      opacity: 0.2;
+    }
+    :not(.active):hover a {
+      color: rgba(255, 255, 255, 0.911);
+    }
+    .nav ul li:not(.active):hover a {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    ::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.2em;
+      background: $black;
+      left: 0;
+      bottom: 0;
+      background-image: $bg_degrade;
+    }
+  }
 }
