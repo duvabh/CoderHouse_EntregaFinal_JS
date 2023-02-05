@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/products/batman.png",
+    "name": "Camisa batman",
+    "price": 25.0,
+    "sizes": "S, M, L, XL",
+    "brand": "DC comic"
+  },
+  {
+    "id": 2,
+    "image": "/assets/products/black_batman.png",
+    "name": "Camisa negra batman",
+    "price": 30.0,
+    "sizes": "S, M, L, XL",
+    "brand": "DC comic"
+  },
+  {
+    "id": 3,
+    "image": "/assets/products/cap_marvel.png",
+    "name": "Camisa capitan marvel",
+    "price": 32.0,
+    "sizes": "S, M, L, XL",
+    "brand": "MARVEL"
+  },
+  {
+    "id": 4,
+    "image": "/assets/products/iroman.png",
+    "name": "Camisa ironman",
+    "price": 27.0,
+    "sizes": "S, M, L, XL",
+    "brand": "MARVEL"
+  },
+  {
+    "id": 5,
+    "image": "/assets/products/spider.png",
+    "name": "Camisa spiderman",
+    "price": 35.0,
+    "sizes": "S, M, L, XL",
+    "brand": "MARVEL"
+  },
+  {
+    "id": 5,
+    "image": "/assets/products/venom.png",
+    "name": "Camisa venom",
+    "price": 25.0,
+    "sizes": "S, M, L, XL",
+    "brand": "MARVEL"
+  }
+]

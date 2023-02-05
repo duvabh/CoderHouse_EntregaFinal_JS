@@ -4,117 +4,238 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Dpalacio shop</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>DPalacio SHOP</title>
   </head>
-  <body id="body">
-    <header class="title_header">
-      <div class="logo">
-        <img src="./img/logo.png" alt="logo" />
-      </div>
-      <div class="title_dp">
-        <h1>DPalacio shop</h1>
-      </div>
-      <div class="profile">
-        <img src="./assets/icons/icon_profile.png" alt="" />
-        <p><span>Duvan Palacio</span></p>
-      </div>
-      <div class="car_empy">
-        <img src="./assets/icons/icon_car_empty.png" alt="" />
-        <div class="car_count">2</div>
-      </div>
-      <div class="profile-menu inactive">
+  <body>
+    <!-- Logo  -->
+    <header class="title">
+      <img src="/img/logo.png" alt="" />
+      <h1>DPalacio Shop</h1>
+    </header>
+
+    <!-- Menu navegador y carrito -->
+    <nav>
+      <img src="/assets/icons/icon_menu.png" alt="menu" class="menu" />
+      <div class="nav_left">
         <ul>
-          <li>
-            <a href="#" class="title">Mis ordenes</a>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/">Hombres</a></li>
+          <li><a href="/">Mujeres</a></li>
+          <li><a href="/">Niños</a></li>
+          <li><a href="/">Accesorios</a></li>
+        </ul>
+      </div>
+      <div class="nav_rigth">
+        <ul>
+          <li class="icon_profile">
+            <img src="/assets/icons/icon_profile.png" alt="" />
           </li>
-          <li>
-            <a href="#">Mi cuenta</a>
-          </li>
-          <li>
-            <a href="#">cerrar sesión</a>
+          <li class="profile_name">Duvan Palacio</li>
+          <li class="shopping_cart">
+            <img
+              src="/assets/icons/icon_car_empty.png"
+              alt="Carrito de compras"
+            />
+            <div>2</div>
           </li>
         </ul>
       </div>
-    </header>
-    <nav class="nav">
-      <ul>
-        <li class="active"><a href="#">Categorias</a></li>
-        <li><a href="#">Hombre</a></li>
-        <li><a href="#">Mujer</a></li>
-        <li><a href="#">Accesorios</a></li>
-      </ul>
     </nav>
 
-<!-- Detalle de los poductos -->
-     <aside class="product-detail inactive">
-      <div class="title-container">
+    <aside class="product_detail inactive">
+      <div class="title_container">
         <img src="./assets/icons/icon_flecha.png" alt="arrow">
         <p class="title">Mi orden</p>
       </div>
-      <div class="my-order-content">
-        <div class="shopping-cart">
+      <div class="my_order_content">
+        <div class="shopping_cart_detail">
           <figure>
-            <img src="./assets/products/black_batman.png" alt="bike">
+            <img src="/assets/products/cap_marvel.png" alt="camisa">
           </figure>
-          <p>Camiseta Batman</p>
-          <p>$30,00</p>
+          <p>Camiseta</p>
+          <p>$38,00</p>
           <img src="./assets/icons/icon_close.png" alt="close">
         </div>
-        <div class="shopping-cart">
+
+        <div class="shopping_cart_detail">
           <figure>
-            <img src="./assets/products/black_batman.png" alt="bike">
+            <img src="/assets/products/cap_marvel.png" alt="camisa">
           </figure>
-          <p>Camiseta Batman</p>
-          <p>$30,00</p>
+          <p>Camiseta</p>
+          <p>$38,00</p>
           <img src="./assets/icons/icon_close.png" alt="close">
         </div>
-        <div class="shopping-cart">
-          <figure>
-            <img src="./assets/products/black_batman.png" alt="bike">
-          </figure>
-          <p>Camiseta Batman</p>
-          <p>$30,00</p>
-          <img src="./assets/icons/icon_close.png" alt="close">
-        </div>
+      
         <div class="order">
           <p><span>Total</span></p>
           <p>$560.00</p>
         </div>
-        <button class="primary-button">
+        <button class="checkout_button">
           Checkout
         </button>
       </div>
     </div>
   </aside>
-
-    <!-- Inicio Productos -->
-    <main class="main-categorys">
-      <section class="mans-container">
-        <div class="card-container">
-          <div class="products-card">
-            <img
-              src="./assets/products/black_batman.png"
-              alt="Camisa_estampada"
-              class="product_img"
-            />
-            <div class="product-info">
-              <div>
-                <p>Camisa Batman</p>
-                <p>$38.000</p>
-                <p>DC comics</p>
-              </div>
-              <figure>
-                <img src="./assets/icons/icon_add_car.png" alt="car_shipping" />
-              </figure>
+    <!-- Contenedor de cards -->
+    <section class="main_container">
+      <div class="card_container">
+        <!-- Cards de productos -->
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
             </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
           </div>
         </div>
-      </section>
-    </main>
-    
-    <!-- fin productos -->
-    <footer class="footer">
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <img src="/assets/products/cap_marvel.png" alt="" />
+          <div class="product_info">
+            <div>
+              <p>Camisa</p>
+              <p>$38.000</p>
+              <p>S, M, L, XL</p>
+              <p>DC comics</p>
+            </div>
+            <figure>
+              <img src="/assets/icons/icon_add_car.png" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer de la pagina -->
+    <footer>
       <div class="redes">
         <h3>Nuestras redes:</h3>
         <a href="#"
@@ -136,6 +257,5 @@
         <p>duvan.palacioo@gmail.com</p>
       </div>
     </footer>
-    <script src="./js/main.js"></script>
   </body>
 </html>
