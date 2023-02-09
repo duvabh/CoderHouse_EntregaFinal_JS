@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&family=Work+Sans:wght@100;200;400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,700&family=Work+Sans:wght@100;200;400;600;800&display=swap');
 
 :root {
   /* Fonts */
-  --contrail: "Contrail One", cursive;
-  --roboto: "Roboto Condensed", sans-serif;
-  --work: "Work Sans", sans-serif;
+  --contrail: 'Contrail One', cursive;
+  --roboto: 'Roboto Condensed', sans-serif;
+  --work: 'Work Sans', sans-serif;
 
   /* Font size */
   --sm: 14px;
@@ -41,10 +41,14 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
   grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
+    'header'
+    'nav'
+    'main'
+    'footer';
+}
+
+.inactive {
+  display: none;
 }
 
 /* Header */
@@ -112,8 +116,8 @@ nav {
 
 .nav_left ul li a:hover,
 .nav_rigth ul li a:hover {
-  color: var(--font_color_2);
-  border: 1px solid var(--font_color_2);
+  color: var(--color_1);
+  border: 1px solid var(--color_1);
 }
 
 .icon_profile img {
@@ -157,6 +161,45 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* Desktop menu */
+.desktop_menu {
+  width: 165px;
+  height: auto;
+  border: 1px solid var(--black);
+  background-color: #e6e6fa;
+  position: absolute;
+  right: 100px;
+  top: 149px;
+  box-sizing: border-box;
+}
+.desktop_menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.desktop_menu ul li {
+  text-align: end;
+  margin: 15px;
+}
+
+.desktop_menu ul li:nth-child(2) {
+  padding-bottom: 30px;
+}
+
+.desktop_menu ul li a {
+  text-decoration: none;
+  margin: 5px;
+  font-family: var(--work);
+  color: var(--font_color);
+  font-weight: bold;
+}
+
+.desktop_menu ul li:last-child a {
+  padding-top: 10px;
+  border-top: 1px solid var(--font_color);
+  color: var(--MidnightBlue);
+  font-weight: bold;
 }
 
 /* Detalle de carrito de compra */
@@ -268,7 +311,7 @@ section {
   grid-template-columns: repeat(auto-fill, var(--card_size));
   gap: 25px;
   place-content: center;
-  margin: 5px;
+  margin: 20px 5px;
 }
 
 .product_card {
@@ -287,11 +330,11 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 16px;
 }
 
 .product_info {
   margin: 0;
+  margin-left: 18px;
 }
 
 .product_info figure img {
@@ -303,18 +346,18 @@ section {
   margin: 0;
   font-weight: bold;
   font-family: var(--contrail);
-  font-size: 20px;
-  margin-bottom: 4px;
+  font-size: 18px;
+  margin-bottom: 10px;
   color: var(--MidnightBlue);
 }
 
 .product_info div p:nth-child(2) {
   margin: 0;
-  font-size: var(--md);
+  font-size: var(--lg);
   font-family: var(--roboto);
   font-weight: bold;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: var(--black);
 }
 
@@ -323,12 +366,14 @@ section {
   font-size: var(--sm);
   margin-top: 0px;
   margin-bottom: 0px;
-  color: var(--black);
+  letter-spacing: 8px;
+  font-weight: 600;
+  color: var(--font_color);
 }
 
 .product_info div p:nth-child(4) {
   margin: 0;
-  font-size: var(--md);
+  font-size: 12px;
   margin-top: 0px;
   margin-bottom: 0px;
   color: gray;
@@ -340,20 +385,20 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-h3 {
-  color: $Lavender;
-  font-family: $contrail;
+.redes h3 {
+  color: var(--font_color);
+  font-family: var(--contrail);
   margin: 0 10px 0;
   text-align: center;
 }
-img {
+.redes img {
   width: 30px;
   margin: 5px 10px 0;
 }
-p {
-  font-family: $roboto;
-  font-size: $large;
-  color: $LightSteelBlue;
+.datos p {
+  font-family: var(--roboto);
+  font-size: var(--lg);
+  color: var(--font_color);
   margin-right: 10px;
 }
 .redes {
@@ -367,6 +412,18 @@ p {
   align-items: center;
 }
 
+.datos h3 {
+  color: var(--font_color);
+  font-family: var(--contrail);
+  margin: 0 10px 0;
+  text-align: center;
+}
+
+.datos img {
+  width: 30px;
+  margin: 5px 10px 0;
+}
+
 /* Mobile firts */
 @media (max-width: 640px) {
   .menu {
@@ -376,9 +433,8 @@ p {
   }
 
   nav {
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
-    margin: 10px;
   }
   .nav_left {
     display: none;
@@ -399,6 +455,13 @@ p {
     margin: 5px;
   }
 
+  .product_detail {
+    width: 400px;
+    padding: 0 24px 0 24px;
+    top: 158px;
+    margin: 0;
+  }
+
   .product_card {
     width: 155px;
   }
@@ -406,5 +469,20 @@ p {
   .product_card img {
     width: 150px;
     height: 150px;
+  }
+
+  .redes h3,
+  .datos h3 {
+    display: none;
+  }
+
+  .redes img,
+  .datos img {
+    width: 25px;
+    margin: 5px 10px 0;
+  }
+
+  .datos p {
+    display: none;
   }
 }
